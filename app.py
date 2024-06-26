@@ -20,7 +20,7 @@ model = genai.GenerativeModel(
 
 st.title('financial Advisor')
 
-genai.configure(api_key=os.getenviron("api_key"))
+genai.configure(api_key=os.getenv("api_key"))
 
 
 uploaded_text = st.text_area("Enter your query here.")
